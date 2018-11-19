@@ -4,37 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
 <body>
+    <div id="whole">
     <header>
-        <nav>
+        <nav id="menu">
             <ul>
                 <li>
-                    <a href="/about.html">O mnie</a>
+                    <a href="#about">O mnie</a>
                 </li>
                 <li>
-                    <a href="/skills.html">Umiejętności</a>
+                    <a href="#skills">Umiejętności</a>
                 </li>
                 <li>
-                    <a href="/projects.html">Projekty</a>
+                    <a href="#projects">Projekty</a>
                 </li>
                 <li>
-                    <a href="/interests.html">Zainteresowania</a>
+                    <a href="interests">Zainteresowania</a>
                 </li>
             </ul>
         </nav>
-        <img src="/pics/main-banner.jpg" alt="main banner">
-        <img src="/pics/b-sign.png" alt="website logo">
-        <h1>The only time success comes before work is in the dictionary.</h1>
+        <div id="main-banner">
+            <img src="/pics/main-banner.jpg" alt="main banner">
+            <img src="/pics/b-sign.png" alt="website logo">
+            <h1>The only time success comes before work is in the dictionary.</h1>
+        </div>    
     </header>
     <article>
-        <div>
-            <!--here commes some welcoming text-->
-        </div>
+        <section id="about">
+                <h2>O mnie</h2>
+                <image class="portrait" img src="/pics/about.jpg" alt="Blazej_Bakiewicz"></image>
+                <div>
+                    <p>Cześć, witam cię serdecznie na mojej stronie. Nazywam się Błażej Bąkiewicz. Żebyś mogła lub mógł mnie lepiej poznać podzieliłem stronę na kilka działów. W projektach znajdziesz informacje o Projektach, w których do tej pory brałem udział i które realizowałem. To co uważam za swoje mocne strony umieściłem w zakładce Umiejętności. Do Zainteresowań powędrowały z kolei moje pasje.
+                    </p> 
+                </div>
+        </section>
+
+
+        <section id="skills">
+            <h2>Umiejętności</h2>
+        </section>
+
+
+
+        <section id="projects">
+            <h2>Projekty</h2>
+        </section>
+
+
+
+        <section id="interests">
+            <h2>Zainteresowania</h2>
+        </section>
     </article>
-    <footer>
-        <!--ad social media icons-->
+    
+
+
+
+
+    <footer id="page-bottom">
+        <p>All rights reserved Błażej Bąkiewicz.</p>
+        <img class="social" src="/pics/fblogo-button.png" alt="My Facebook profile">
+        <img class="social" src="/pics/github-button.png" alt="My Github profile">
+
     </footer>
+</div>
 </body>
 </html>
