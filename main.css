@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -15,29 +15,55 @@ body {
 
 #menu ul {
     list-style-type: none;
-    text-align: center;
+    //text-align: center;
 }
 
 #menu li {
-    display: inline-block;
-    margin-left: 10px; /*try to change it to be responsive*/
+    //display: inline-block;
+    //margin-left: 10px; /*try to change it to be responsive*/
 }
 
 #menu a {
     color: white;
     text-decoration: none;
+    padding: 10px;
+    border-radius: 10%;
+    display: block;
 }
 
+#menu a:hover {
+    background: #005866;
+}
+
+h2.section-title {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
 
 .portrait {
     border-radius: 50%; 
 }
 
+section#skills {
+    background: #038C8E;
+    padding: 10px;
+    margin: 10px auto;
+}
+
 #page-bottom {
-    background-color: #478A99;
+    background: #005866;    
     color: white;
+    display: flex;
 }
 
 #page-bottom img {
     margin-left: 10px;  /*try to change it to be responsive*/
+}
+
+@media screen and (min-width: 768px) {
+    #menu ul {
+        display: flex;
+        justify-content: center;
+    }
 }
