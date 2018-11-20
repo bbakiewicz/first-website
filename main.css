@@ -1,10 +1,11 @@
 body {
     margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
 }
 
 #whole {
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -46,6 +47,7 @@ body {
     align-items: center;
     height: 70vh;
     padding-top: 30px;
+    text-align: center;
 }
 
 #main-banner img {
@@ -65,6 +67,7 @@ h2.section-title {
     font-family: 'Exo', sans-serif;
     color: lightgray;
     font-weight: normal;
+    font-size: 2rem;
 }
 
 .portrait {
@@ -91,7 +94,7 @@ section#skills {
 
 .skill-table {
     padding: 2em;
-    margin-right: 15%;
+    margin-right: 2%;
 
 }
 
@@ -101,10 +104,44 @@ td.left-column {
     padding-right: 4em;
 }
 
+div.project-describe1 {
+    display: inline-block;
+}
+
+.professional-projects {
+    background-image: url("/pics/proj-inf-pasaz.png");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graphic-projects {
+    background-image: url("/pics/proj-zuk.png")
+}
+
+.social-projects {
+    background-image: url("/pics/proj-papkins.png")
+}
+
+div.interests-describe {
+    padding: 0 3vw;
+}
+
 #page-bottom {
     background: #005866;    
     color: white;
-    display: flex;
+    padding: 1vw;
+    margin-top: 3vh;
+    text-align: center;
+}
+
+div.footer-rights {
+    padding: 2vh;
+}
+
+div.social {
+    padding-bottom: 2vh;
 }
 
 #page-bottom img {
@@ -115,5 +152,24 @@ td.left-column {
     #menu ul {
         display: flex;
         justify-content: center;
+    }
+
+    #page-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    div.footer-rights {
+        padding: 0;
+    }
+    
+    div.social {
+        padding-bottom: 0;
+    }
+
+    .project-describe1 {
+        display: flex;
+        justify-content: space-around;
     }
 }
