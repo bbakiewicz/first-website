@@ -24,7 +24,7 @@ body {
     color: white;
     text-decoration: none;
     padding: 10px;
-    border-radius: 10%;
+    border-radius: 5%;
     display: block;
     font-family: 'Exo', sans-serif;
 }
@@ -104,24 +104,44 @@ td.left-column {
     padding-right: 4em;
 }
 
-div.project-describe1 {
-    display: inline-block;
-}
-
-.professional-projects {
+h3.professional-projects {
     background-image: url("/pics/proj-inf-pasaz.png");
     background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 250px;
+    color: white;
+    font-size: 2rem;
 }
 
-.graphic-projects {
-    background-image: url("/pics/proj-zuk.png")
+h3.graphic-projects {
+    background-image: url("/pics/proj-zuk.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    color: white;
+    font-size: 2rem;
 }
 
-.social-projects {
-    background-image: url("/pics/proj-papkins.png")
+h3.social-projects {
+    background-image: url("/pics/proj-papkins.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    color: white;
+    font-size: 2rem;
+}
+
+div.project-details {
+    padding: 1vw 3vw;
 }
 
 div.interests-describe {
@@ -145,7 +165,7 @@ div.social {
 }
 
 #page-bottom img {
-    margin-left: 10px;  /*try to change it to be responsive*/
+    margin-left: 10px;
 }
 
 @media screen and (min-width: 768px) {
@@ -168,8 +188,13 @@ div.social {
         padding-bottom: 0;
     }
 
-    .project-describe1 {
+    div.project-describe {
         display: flex;
-        justify-content: space-around;
+        flex-flow: row;
+        align-items: center;
+    }
+
+    .project-describe h3 {
+        min-width: 450px;
     }
 }
